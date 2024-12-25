@@ -15,13 +15,10 @@ void setup() {
 
 void loop() {
   // Alle meine Entchen - Noten: G G A A H H A (erste Zeile, Oktave höher)
-  playTone(200, 784); // G (784 Hz, eine Oktave höher als 392 Hz)
-  playTone(200, 784); // G (784 Hz)
-  playTone(200, 880); // A (880 Hz, eine Oktave höher als 440 Hz)
-  playTone(200, 880); // A (880 Hz)
-  playTone(200, 988); // H (988 Hz, eine Oktave höher als 494 Hz)
-  playTone(200, 988); // H (988 Hz)
-  playTone(550, 880); // A (880 Hz, etwas länger)
-
-  delay(1000); // Pause vor Wiederholung         
+  //playTone(1000, 2000); // G (784 Hz, eine Oktave höher als 392 Hz)
+   digitalWrite(BUZZER_PIN, HIGH);  // Buzzer an
+  delay(500);                    // 1 Sekunde warten
+  digitalWrite(BUZZER_PIN, LOW);   // Buzzer aus
+  delay(100);                    // 1 Sekunde warten
+     
 }
